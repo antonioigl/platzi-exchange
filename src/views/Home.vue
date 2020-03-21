@@ -1,6 +1,6 @@
 <template>
   <div>
-    <px-assets-table :assets="assets"/>
+    <px-assets-table :assets="assets" />
   </div>
 </template>
 
@@ -20,8 +20,7 @@ export default {
   },
 
   created() {
-    api.getAssets()
-      .then(assets => (this.assets = assets))
+    api.getAssets().then(assets => (this.assets = assets))
   }
 }
 </script>
